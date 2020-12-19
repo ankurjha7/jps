@@ -1,4 +1,4 @@
-# jps
+# Jps
 Golang implementation of Jump point search . Jump point search minimizes A* execution time by jumping nodes which won't be contributing in optimizing path. Detailed explaination available at - https://users.cecs.anu.edu.au/~dharabor/data/papers/harabor-grastien-icaps14.pdf
 
 ## Usage 
@@ -31,5 +31,11 @@ func main() {
 	}
 
 }
+```
+
+
+## References 
+
+A python version of code which served as a reference for this is available at - https://github.com/ViktorRubenko/Jump-Point-Search
 
 
