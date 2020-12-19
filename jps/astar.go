@@ -12,6 +12,7 @@ type aStarNode struct {
 	fscore float64
 }
 
+//Path struct to hold the shortest path result
 type Path struct {
 	Nodes  []Node
 	Weight float64
@@ -68,6 +69,7 @@ func (q *aStarQueue) node(node *Node) (aStarNode, bool) {
 	return aStarNode{}, false
 }
 
+//AStarWithJump astar implementation with neighbours filtered by jump point search .
 func AStarWithJump(matrix [][]uint8, start Node, goal Node, hchoice int) (*Path, error) {
 
 	cameFrom := make(map[Node]Node)
